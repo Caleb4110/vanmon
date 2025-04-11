@@ -1,0 +1,6 @@
+build/
+sdkconfig*
+node_modules/
+dist/
+.DS_Store
+.cache/
