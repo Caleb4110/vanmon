@@ -21,11 +21,14 @@ such as a display.
 ### Installation
 - Clone the repository
 - cd into the repository
-- run get_idf to initialise the esp-idf environment
-- run idf.py menuconfig to configure the project
-    - set the I2C address of the INA219 sensors
-- run idf.py -p PORT flash monitor to upload the code to the ESP32 and monitor the output
+- run `get_idf` to initialise the esp-idf environment
+- run `idf.py menuconfig` to configure the project
+    - set the SCL and SDA pins for the INA219 sensor
+- run `idf.py -p PORT flash monitor` to upload the code to the ESP32 and monitor the output
 
 ## Usage
 Once running, and you are connected to the ESP32's access point (VanMon),
 you should be able to access the web interface at http://<ESP32_IP_ADDRESS>/
+
+## Further considerations
+- This currently only works with one INA219 sensor. I will add support for multiple sensors in the future.
